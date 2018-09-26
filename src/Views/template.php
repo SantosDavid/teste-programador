@@ -23,7 +23,10 @@
                             <a class="nav-link" href="/ssh"><h4 style="color: white">Integração SSH | </h4></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="/encryption"><h4 style="color: white">Criptografia</h4></a>
+                            <a class="nav-link" href="/encryption"><h4 style="color: white">Criptografia | </h4></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/hash"><h4 style="color: white">Hash</h4></a>
                         </li>
                     </ul>
                     <!-- <form class="form-inline my-2 my-lg-0">

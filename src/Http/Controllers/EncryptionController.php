@@ -2,9 +2,14 @@
 
 namespace Http\Controllers;
 
-class EncryptionController
+class EncryptionController extends BaseController
 {
     public function index()
+    {
+        return $this->view('encryption/index');
+    }
+
+    public function encrypt()
     {
         
     }
