@@ -17,10 +17,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="/devices"><h3>Controle dispositivos</h3></a>
+                            <a class="nav-link" href="/devices"><h4 style="color: white">Controle dispositivos | </h4></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/ssh"><h4 style="color: white">Integração SSH | </h4></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/encryption"><h4 style="color: white">Criptografia</h4></a>
                         </li>
                     </ul>
                     <!-- <form class="form-inline my-2 my-lg-0">
