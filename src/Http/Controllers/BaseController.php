@@ -6,9 +6,8 @@ abstract class BaseController
 {
     const VIEWS = 'Views';
 
-    public function view($view, $variables = null)
-    {
-        
+    public function view($view, $variables = [])
+    {     
         $path = str_replace('Http'. DIRECTORY_SEPARATOR .'Controllers', '', __DIR__);
         
         $view = $path . Self::VIEWS . '/' . $view . '.php';
