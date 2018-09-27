@@ -31,9 +31,4 @@ class EncryptionController extends BaseController
         
         return $this->view('encryption/index', compact('data'));
     }
-
-    public function decryption()
-    {
-        var_dump($this->service->decrypt($_POST['CIFRA_CESAR'], $_POST['AES_256']));
-    }
 }
