@@ -2,7 +2,7 @@
 
 namespace Http\Controllers;
 
-use Services\EncryptService;
+use Services\Encrypt\EncryptService;
 
 class EncryptionController extends BaseController
 {

@@ -66,24 +66,12 @@ abstract class Model
         $cols = '';
 
         foreach ($values as $field => $value) {
-            $cols .= $field . '=?, ';       
+            $cols .= $field . "= '$value', ";       
         }
 
         $cols = substr($cols, 0, strlen($cols) -2);
       
-        $statement = $this->connection->prepare("UPDATE $this->table SET $cols WHERE id = ?");
-
-        $i = 1;
-
-        foreach ($values as $value) {
-            $statement->bindParam($i++, $value);
-        }
-        
-        $id = (int) $id;
-
-        $statement->bindParam($i, $id);
-        
-        return $statement->execute();
+        return $this->connection->query("UPDATE $this->table SET $cols WHERE id = $id");
     }
 
     public function all()

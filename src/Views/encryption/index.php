@@ -17,7 +17,7 @@
                         </div>
                         <div class="col-md-4">
                             <label>Key</label>
-                            <input type="text" name="key" class="form-control" required minlength="32" maxlength="32" value="<?=  isset($_POST['key']) ? $_POST['key'] : '' ?>">
+                            <input type="text" name="key" class="form-control" required minlength="32" maxlength="32" value="<?=  isset($_POST['key']) ? $_POST['key'] : 'asdmcls&23120931ds-021321dwCsaçd' ?>">
                         </div>
                     </div>
                     <?php if (array_key_exists('data', $variables)) { ?>

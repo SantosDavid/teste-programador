@@ -5,7 +5,7 @@ function autoload($className) {
     $extension = spl_autoload_extensions();
 
     $className = str_replace('\\', '/', $className);
-
+    
     require_once(__DIR__ . '/src/' . $className . $extension);
 }
 

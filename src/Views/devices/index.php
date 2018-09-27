@@ -34,15 +34,15 @@
                                     <td><?= $device->ip ?></td>
                                     <td><?= $device->tipo ?></td>
                                     <td><?= $device->fabricante ?></td>
-                                    <td>
+                                    <td class="form-inline">
                                         <form action="/devices/edit?id=<?= $device->id ?>" method="POST">
                                             <button class="btn btn-success btn-sm">
-                                                <span class="fa fa-edit"></span>
+                                                Editar
                                             </button>
-                                        </form>
+                                        </form>&nbsp
                                         <form action="/devices/destroy?id=<?= $device->id ?>" method="POST">
                                             <button class="btn btn-danger btn-sm">
-                                                X
+                                               Excluir
                                             </button>
                                         </form>
                                     </td>

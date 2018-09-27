@@ -2,8 +2,6 @@
 
 namespace Services;
 
-use Helpers\Random;
-
 class HashService
 {
     public function hash($string)
@@ -12,9 +10,9 @@ class HashService
             
             'SHA512' => hash('SHA512', $string),
             
-            'HMAC' => hash_hmac('haval256,5', $string, Random::alphaNumeric(rand(30, 100))),
+            'HMAC' => hash_hmac('haval256,5', $string, random_bytes(rand(30, 100))),
             
-            'PASSWORD_HASH' => password_hash($string, PASSWORD_DEFAULT),
+            'BCRYPT' => password_hash($string, PASSWORD_BCRYPT),
         ];
     }
 }

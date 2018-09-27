@@ -1,0 +1,7 @@
+create table devices (
+	id integer(11) unsigned primary key auto_increment,
+	hostname varchar(100) not null,
+    ip varchar(20) not null unique,
+    tipo enum('servidor', 'roteador', 'switch') not null,
+    fabricante varchar(100) not null
+)
